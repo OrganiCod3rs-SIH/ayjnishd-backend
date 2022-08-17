@@ -1,0 +1,16 @@
+version: "2.0"
+
+stories:
+
+- story: ask path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_job
+  - action: utter_job
+  - intent: ask_cochlear
+  - action: utter_cochlear_implants
+  - intent: ask_how_to_apply
+  - action: utter_how_to_apply
+  - intent: ask_who_is_eligible
+  - action: utter_who_is_eligible

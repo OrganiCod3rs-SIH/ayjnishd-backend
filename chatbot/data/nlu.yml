@@ -1,0 +1,120 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hie
+    - helo
+    - namaste
+    - halo
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_job
+  examples: |
+    - how can you help me?
+    - help me
+    - what can you do?
+    - what are you for?
+
+- intent: ask_cochlear
+  examples: |
+    - what are cochlear implants?
+    - what coclear?
+    - cochlear implants what?
+    - what is implants?
+
+- intent: ask_how_to_apply
+  examples: |
+    - How to apply?
+    - how can i apply?
+    - apply how?
+    - need to apply?
+    - can i apply online?
+
+- intent: ask_who_is_eligible
+  examples: |
+    - Who is eligible?
+    - am i eligible?
+    - who can apply?
+    - eligibility criteria?
+    - what is criteria to be eligible?
+    

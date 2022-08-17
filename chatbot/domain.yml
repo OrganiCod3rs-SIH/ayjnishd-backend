@@ -1,0 +1,66 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - bot_job
+  - ask_cochlear
+  - ask_how_to_apply
+  - ask_who_is_eligible
+
+responses:
+  utter_greet:
+  - text: "Namaste! I am a bot by ADIP. How can I help you today?"
+
+  utter_job:
+  - text: "I can help you with getting information about the ADIP scheme for Cochlear Implants.
+          \ \nHere are a few of the many things you can ask me:
+          \ \n1. What are cochlear implants?
+          \ \n2. How can I apply for this scheme?
+          \ \n3. Who is eligible to apply?
+          \ \n4. Book an appointment for me."
+
+  utter_cochlear_implants:
+  - text: "The cochlear implant is a prosthetic device, a part of which is surgically implanted inside the cochlea.
+          \ \nIt is a device to be used by someone with almost complete hearing loss. While a hearing aid provides
+          \ \namplified sound energy to the ear, the cochlear implant directly provides electrical stimulation to the nerve endings in the cochlea."
+    image: "http://adipcochlearimplant.in/img/ban-1.png"
+  
+  utter_how_to_apply:
+  - text: "You can apply following these easy steps:
+          \ \n1. Fill up http://adipcochlearimplant.in/Application-Instruction.aspx online form.
+          \ \n2. Attach the scanned copy of supporting documents.
+          \ \n3. You can also download the Application form from the same link & send the filled Application with all the required supporting documents to following address:
+          \n\nAli Yavar Jung National Institute of Speech and Hearing Disabilities (Divyangjan)
+          \ \nK.C. Marg, Bandra (W) Reclamation
+          \ \nMumbai - 400 050
+          \ \nMaharashtra"
+  
+  utter_who_is_eligible:
+  - text: "The eligibility criteria for the ADIP scheme is:
+          \ \n1. Must be an Indian citizen.
+          \ \n2. Age of the child:
+                  \ \n(a) Child with congenital deafness (since birth)
+                      \ \nupto 5 years as on 31st December in the current year.
+                  \ \n(b) Upto 12 years for child with post lingual
+                      \ \ndeafness i.e. after development of speech & language.
+          \ \n3. Degree of hearing loss : Severe to Profound sensorineural hearing loss in both ears.
+          \ \n4. Other details can be found at http://adipcochlearimplant.in/ADIP_PDF/CI%20Candidacys.pdf"
+  
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Goodbye :)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

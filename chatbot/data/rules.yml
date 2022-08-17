@@ -1,0 +1,31 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say bot job anytime the user asks for job
+  steps:
+  - intent: bot_job
+  - action: utter_job
+
+- rule: info cochlear
+  steps:
+  - intent: ask_cochlear
+  - action: utter_cochlear_implants
+
+- rule: info how to apply
+  steps:
+  - intent: ask_how_to_apply
+  - action: utter_how_to_apply
+
+- rule: info eligibilty criteria
+  steps:
+  - intent: ask_who_is_eligible
+  - action: utter_who_is_eligible
+
+
+
