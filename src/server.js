@@ -4,7 +4,8 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
 
-const kpi = require('./routes/kpi.route')
+const kpi = require('./routes/kpi.route');
+const feedback = require('./routes/feedback.route');
 
 app.use(cors());
 app.use(express.json())
@@ -13,6 +14,7 @@ app.get('/', (req, res) => {
     res.send("<h1>Welcome</h1>")
 })
 app.use('/', kpi);
+app.use('/', feedback);
 
 
 app.listen(port, () => {
