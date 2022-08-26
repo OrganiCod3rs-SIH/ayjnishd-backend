@@ -2,12 +2,25 @@ const pool = require("../models/db");
 const { v4: uuidv4 } = require("uuid");
 
 const getCi = async (req, res) => {
-  try {
-    const Ci = await pool.query(`SELECT * FROM ci_child`);
-    res.json(Ci.rows);
-  } catch (err) {
-    console.log(err);
-  }
+  if(req.query.id === undefined || req.params.id === "" || req.params.id === null){
+    try {
+      const Ci = await pool.query(`SELECT * FROM ci_child`);
+      res.json(Ci.rows);
+    } catch (err) {
+      console.log(err);
+    }
+   }else
+   {
+    console.log(req.query.id);
+    try {
+      const {id} = req.query;
+      console.log(id);
+      const Ci = await pool.query(`SELECT * FROM ci_child where id = $1`, [id]);
+      res.json(Ci.rows);
+    } catch (err) {
+      console.log(err);
+    }
+   }
 };
 
 const postCi = async (req, res) => {
